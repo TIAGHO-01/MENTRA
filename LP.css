@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+header {
+  background: #767fe4b2;
+  color: white;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  background: linear-gradient(to right, #040a16b2,#040a16b2);
+  color: white;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #fff;
+  color: #130a8d;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+  position: fixed;
+  top: 30px;
+  right: 0px;
+}
+
+.btn:hover {
+  background: #e0e7ff;
+}
+
+.section {
+  background: #040a16b2;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.section.alt {
+  background: #040a16b2;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background:#040a16b2;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
