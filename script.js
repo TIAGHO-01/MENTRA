@@ -1,21 +1,15 @@
-document.querySelector(".start-session-button").addEventListener("click", () => {
-  // Hide session button and show video container
-  document.querySelector(".start-session-button").style.display = "none";
-  document.getElementById("jitsi-container").style.display = "block";
+// script.js
 
-  const container = document.getElementById("jitsi-container");
-  container.style.display = "block";
+// Récupérer le bouton et le champ de mot de passe
+const togglePasswordButton = document.getElementById('togglePassword');
+const passwordInput = document.getElementById('password');
 
-  // Jitsi config
-  const domain = "meet.jit.si";
-  const options = {
-    roomName: "MentraSession_" + Math.floor(Math.random() * 100000), // generate unique room
-    width: "100%",
-    height: "100%",
-    parentNode: container,
-    interfaceConfigOverwrite: {
-      SHOW_JITSI_WATERMARK: false
-    }
-  };
-  const api = new JitsiMeetExternalAPI(domain, options);
+// Ajouter un écouteur d'événements sur le bouton
+togglePasswordButton.addEventListener('click', () => {
+  // Vérifier le type actuel du champ
+  const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+  passwordInput.setAttribute('type', type);
+
+  // Changer le texte du bouton
+  togglePasswordButton.textContent = type === 'password' ? 'Show' : 'Hide';
 });
