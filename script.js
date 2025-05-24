@@ -1,21 +1,20 @@
-document.querySelector(".start-session-button").addEventListener("click", () => {
-  // Hide session button and show video container
-  document.querySelector(".start-session-button").style.display = "none";
-  document.getElementById("jitsi-container").style.display = "block";
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('searchInput');
+    const mentorContainer = document.getElementById('mentorContainer');
+    const mentorCards = mentorContainer.getElementsByClassName('mentor-card');
 
-  const container = document.getElementById("jitsi-container");
-  container.style.display = "block";
+    searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
 
-  // Jitsi config
-  const domain = "meet.jit.si";
-  const options = {
-    roomName: "MentraSession_" + Math.floor(Math.random() * 100000), // generate unique room
-    width: "100%",
-    height: "100%",
-    parentNode: container,
-    interfaceConfigOverwrite: {
-      SHOW_JITSI_WATERMARK: false
-    }
-  };
-  const api = new JitsiMeetExternalAPI(domain, options);
+        Array.from(mentorCards).forEach(card => {
+            const name = card.querySelector('h2').textContent.toLowerCase();
+            const specialty = card.querySelector('p').textContent.toLowerCase();
+
+            if (name.includes(searchTerm) || specialty.includes(searchTerm)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
 });
