@@ -111,7 +111,7 @@ body {
 
 /* === FRAME 2: LEFT PANEL === */
 .left-panel {
-  width: 250px;
+  width: 400px;
   background-color: #1b0948;
   border-top-right-radius: 10px;
   padding: 10px;
@@ -139,7 +139,7 @@ body {
   border-radius: 6px;
   background-color: #07013ac5;
   border: none;
-  color: #0c062bca;
+  color: white;
   font-size: 13px;
 }
 
@@ -183,12 +183,52 @@ body {
 
 /*  CENTER PANEL  */
 .center-panel {
-  flex: 1;
+  height: 100%;
+  width: 100%;
   background-color: #0c062bca;
   display: flex;
   flex-direction: column;
-  min-width: 310px;
   position: relative; /* Optional but good for stacking */
+}
+
+.fiter-options {
+  height: 60px;
+  width: 100%;
+  border-bottom-right-radius: 10px;
+  background-color: #0c062bca;
+  display: flex;
+  padding: 0 5px;
+  color: white;
+  padding-top: 30px;
+  padding-left: 18px;
+  gap: 15px;
+}
+
+.filter {
+  height: 25px;
+  border-top-right-radius: 6px;
+  background-color: #290583;
+  border-top: none;
+  border-left: none;
+  color: whitesmoke;
+}
+
+.filter:hover {
+background-color: #0c032487;
+}
+
+.chart {
+  height: 80%;
+  width: 100%;
+  padding: 40px;
+  background-color: #160347;
+  display: flex;
+
+}
+
+canvas#timeChart {
+  width: 100%;
+  height: 100%;
 }
 
 #jitsi-container {
