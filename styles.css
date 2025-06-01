@@ -79,3 +79,14 @@ body {
 .mentor-card button:hover {
     background-color: #ddd;
 }
+.logo-container img{
+ width:0,5px
+ height:0,5px;
+ text-align:left;
+ }
+.logo-text{
+  color:white;
+  front-size:24px;
+  front-weigth:bold;
+  front-family:Arial,sans-serif;
+  
