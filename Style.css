@@ -112,3 +112,20 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #5a67d8;
 }
+body {
+  background-color: black; /* Fond noir */
+  margin: 0;
+  padding: 0;
+}
+
+.corner-image {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 80px;      /* Taille de l'image */
+  height: 80px;     /* Hauteur égale pour rendre le cercle parfait */
+  border-radius: 50%; /* Rend l'image circulaire */
+  object-fit: cover;  /* Coupe l’image proprement si elle dépasse */
+  z-index: 10;
+}
+
