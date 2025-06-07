@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mentor Info</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #001f3f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: #65828f;
+      width: 700px;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      color: white;
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      margin: 5px 0;
+    }
+
+    .info-label {
+      font-weight: bold;
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="mentorCard">
+    <img src="https://via.placeholder.com/120" alt="Mentor Photo" id="mentorPhoto" />
+    <h2 id="mentorName">Mentor Name</h2>
+    <p><span class="info-label">Level:</span> <span id="mentorLevel"></span></p>
+    <p><span class="info-label">Course:</span> <span id="mentorCourse"></span></p>
+    <p><span class="info-label">Password:</span> <span id="mentorPassword"></span></p>
+  </div>
+
+  <script>
+    // Example dynamic data - replace with backend data from your database
+    const mentor = {
+      name: "Alice Johnson",
+      level: "Senior",
+      course: "Mathematics",
+      password: "password123",
+      photo: "https://via.placeholder.com/120"
+    };
+
+    document.getElementById("mentorName").innerText = mentor.name;
+    document.getElementById("mentorLevel").innerText = mentor.level;
+    document.getElementById("mentorCourse").innerText = mentor.course;
+    document.getElementById("mentorPassword").innerText = mentor.password;
+    document.getElementById("mentorPhoto").src = mentor.photo;
+  </script>
+
+</body>
+</html>
