@@ -3,56 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mentra Learning</title>
-  <link rel="stylesheet" href="m.css" />
+  <title>Mentra</title>
+  <link rel="stylesheet" href="LP.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <div class="container">
-      <h1>Mentra Learning</h1>
+    <div class="container header-flex">
+      <div class="logo-title">
+        <img src="./assets/Mentra.jpg" alt="Mentra Logo" class="logo">
+        <h1>Mentra </h1>
+      </div>
       <nav>
         <a href="#mentors">Mentors</a>
-        <a href="#mentees">Mentees</a>
-        <a href="#join">Join Us</a>
+        <a href="#mentees">Sign in</a>
+        <a href="#join">About</a>
+        <a href="#Aide">Aide</a>
       </nav>
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
     <div class="container">
       <h2>Empowering Growth Through Mentorship</h2>
       <p>Connect with experienced mentors or guide aspiring learners. Join the Mentra Learning community today.</p>
-      <a href="#join" class="btn">Get Started</a>
+      <button class="join-btn">Join</button>
+    </div>
+
+  </section>
+
+  <section class="">
+    <div class="slider-frame">
+      <div class="slider-images">
+        <img src="./assets/example1.jpg" alt="Slide 1">
+        <img src="./assets/example2.jpg" alt="Slide 2">
+        <img src="./assets/example3.jpg" alt="Slide 3">
+      </div>
     </div>
   </section>
 
-  <section id="mentors" class="section">
+  <!-- Left Block: Mentors -->
+  <div id="mentors" class="left-block">
     <div class="container">
       <h3>For Mentors</h3>
       <p>Share your knowledge and experience. Help others grow and succeed in their journey.</p>
     </div>
-  </section>
+  </div>
 
-  <section id="mentees" class="section alt">
+  <!-- Right Block: Mentees -->
+  <div id="mentees" class="right-block">
     <div class="container">
       <h3>For Mentees</h3>
       <p>Learn from the best. Get guidance from mentors who have walked the path you're on.</p>
     </div>
-  </section>
+  </div>
 
+  <!-- Join Section -->
   <section id="join" class="section">
     <div class="container">
       <h3>Join Mentra Learning</h3>
       <p>Whether you're here to mentor or learn, we're excited to have you. Sign up and start your journey today!</p>
-      <a href="#" class="btn">Sign Up</a>
+      <button class="join-btn">Join now! →</button>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Mentra Learning. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="LP.js"></script>
 </body>
 </html>
