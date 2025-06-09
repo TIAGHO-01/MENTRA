@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <title>Inscription</title>
   <link rel="stylesheet" type="text/css" href="/sign-in.css">
-
   <script src="sign-in.js"></script>
-   <img src="IMG-20250524-WA0032.jpg" alt="Logo" class="corner-image">
-
+  <img src="IMG-20250524-WA0032.jpg" alt="Logo" class="corner-image">
 </head>
 <body>
 
@@ -26,6 +24,13 @@
 
       <label for="confirm_password">Confirmer le mot de passe :</label>
       <input type="password" id="confirm_password" name="confirm_password" required>
+
+      <label for="status">Statut :</label>
+      <select id="status" name="status" required>
+        <option value="">-- Choisissez votre statut --</option>
+        <option value="mentor">Mentor</option>
+        <option value="mentra">Mentee</option>
+      </select>
 
       <button type="submit">Créer un compte</button>
     </form>
